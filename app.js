@@ -4,7 +4,7 @@ const st = require('./salahTimings');
 var app = express();
 var port = 3000;
 
-app.get('/namazTimings',async(req,res)=>{
+app.get('/namazTimings ',async(req,res)=>{
     var data = await st.getSalahTimes();
     res.send(data);
 })
